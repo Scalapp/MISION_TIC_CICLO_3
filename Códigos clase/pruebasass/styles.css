@@ -1,0 +1,21 @@
+body {
+  background-color: red;
+  font-family: sans-serif;
+  background-color: black;
+  color: blanchedalmond;
+  padding: 30px;
+}
+h1 {
+  font-size: 20px;
+  color: red;
+  font-family: sans-serif;
+  background-color: black;
+  color: blanchedalmond;
+  padding: 30px;
+}
+.fonT {
+  font-family: sans-serif;
+  background-color: black;
+  color: blanchedalmond;
+  padding: 30px;
+}

@@ -1,0 +1,52 @@
+$color: rgb(20, 8, 8);
+$letras: burlywood;
+$pixel: 100px;
+$pixel2:100px;
+@mixin fondo ($color,$pixel){
+    color: $color;
+    background-color:$letras;
+    padding: $pixel;
+    width: $pixel2;
+    font-size: $pixel;
+}
+
+body{
+
+    background-color:  $color;
+}
+
+
+h1{@include fondo(red,40px);}
+
+p{@include fondo(blue,$pixel/6);}
+
+ul{
+    list-style: none;
+    color: blanchedalmond;
+    padding: 20px;
+    li{
+        display:inline-block;
+        background-color: burlywood;
+        color: black;
+        padding: 5px 10px;
+        text:{
+        transform: uppercase;
+        align: left;
+        indent: 2px;
+        }
+
+        a{
+            background-color: blue;
+            
+        }
+    }
+   
+
+}
+
+
+ol{
+    list-style: none;
+    color: blanchedalmond;
+}
+
