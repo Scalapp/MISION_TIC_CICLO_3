@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--/**
+ * 21 septiembre 2021
+ * @author Diego Iván Oliveros Acosta
+ * www.scalapp.co
+ */-->
+<!-- 4. Algunos tipos de eventos -->
+<html>
+
+<head>
+    <script>
+        function myFunction(elmnt, clr) {
+            elmnt.style.color = clr;
+        }
+        function queElemento(elemento) {
+            var targ;
+            if (!elemento) {
+                var elemento = window.event;
+            }
+            if (elemento.target) {
+                targ = elemento.target;
+            } else if (elemento.srcElement) {
+                targ = elemento.srcElement;
+            }
+            var tname;
+            tname = targ.tagName;
+            alert("Usted seleccionó un elemento de tipo " + tname + " Gracias.");
+        }
+
+        function Coordenadas(e) {
+            x = e.clientX;
+            y = e.clientY;
+            coor = "Coordenadas: (" + x + "," + y + ")";
+            document.getElementById("párrafofinal").innerHTML = coor
+        }
+
+        function clearCoor() {
+            document.getElementById("párrafofinal").innerHTML = "";
+        }
+    </script>
+</head>
+
+<body onmousedown="queElemento(event)">   <!-- Puedo evitar que pase? -->
+
+    <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Pasar el mouse sobre este texto</h1>
+
+    <p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
+        Click en el texto para cambiar el color. Una función con parámetros, se activa cunado se presiona el boton del
+        mouse y se desactiva
+        cuando se suelta el botón del mouse nuevamente.
+    </p>
+
+    <p>Haga click sobre un lugar o elemento del documento.
+        Un cuadro de alerta le indicará con qué elemento está interactuando.</p>
+    <h3>Esto es un encabezado</h3>
+    <img border="0" src="/Imagenes/scalapp.png" alt="Smiley" width="100" height="100" onmousemove="Coordenadas(event)">
+    <p>Esto es el tercer párrafo.</p>
+
+
+    <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="Coordenadas(event)"
+        onmouseout="clearCoor()"></div>
+
+    <p>Pase el mouse sobre el rectángulo de arriba y obtendrá las coordenadas del puntero del mouse.
+        Es importante desabilitar otras funciones. 
+    </p>
+
+    <p id="párrafofinal"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--/**
+ * 21 septiembre 2021
+ * @author Diego Iván Oliveros Acosta
+ * www.scalapp.co
+ */-->
+<!-- 3. Es posible manejar distitos formatos de documento, se pueden cambiar los valores de
+los atributos que tienen los elementos HTML, por ejemplo los de una imagen. (img) texto, Tamaño, fuente, url etc... -->
+<html>
+<body>
+
+<h2>¿Cómo cambio los atributos?</h2>
+
+<p id="myparrafo1">JavaScript puede cambiar los valores de los atributos html</p>
+
+<p id="myparrafo2">Por ejemplo la fuente de un archivo en html</p>
+
+<button onclick="document.getElementById('myImagen').src='/Imagenes/1200px-LESS_Logo.svg.png'">Less</button>
+
+<img id="myImagen" src="/Imagenes/preprocesador.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImagen').src='/Imagenes/sass_Logo.png'">sass</button>
+<button type="button" onclick="document.getElementById('myImagen').style.width='35px'">-</button>
+<button type="button" onclick="document.getElementById('myImagen').style.width='200px'">+</button>
+<button type="button" onclick="document.getElementById('myparrafo2').style.fontSize='35px'">letra</button>
+<button type="button" onclick="document.getElementById('myparrafo2').innerText='www.scalapp.co'">texto</button>
+<button type="button" onclick="document.getElementById('myparrafo1').style.display='none'">Escondeme!</button>
+<button type="button" onclick="document.getElementById('myparrafo1').style.display='block'">Muestrame!</button>
+
+
+</body>
+</html>
