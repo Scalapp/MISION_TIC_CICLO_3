@@ -9,21 +9,21 @@
 <html>
 
 <head>
-
+<!--1.  se puede quitar -->
 </head>
 
 <body>
-    <h2>¿Qué es Javascript?</h2>
-
-
-
+    <h2 id=tag1>¿Qué es Javascript?</h2>
+    <h6>¿Qué es Javascript?</h6>
     <p id="ModParrafo">
         JavaScript puede cambiar el contenido,
         haciendo click en el siguiente botón:
     </p>
 
     <button type="button" onclick="document.getElementById('ModParrafo').innerHTML = 
-    'Este es el texto modificado!'">Haga click aquí!</button>
+    'Este es el texto modificado!'"> NOmbre inicial: Haga click aquí para el párrafo!</button>
+    <button type="button" onclick="document.getElementById('tag1').innerHTML = 
+    'Este es el otro tag!'">Haga click aquí para cambiar la etiqueta!</button>
 
 </body>
 
