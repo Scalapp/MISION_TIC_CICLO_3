@@ -8,43 +8,14 @@
 <html>
 
 <head>
-    <script>
-        function myFunction(elmnt, clr) {
-            elmnt.style.color = clr;
-        }
-        function queElemento(elemento) {
-            var targ;
-            if (!elemento) {
-                var elemento = window.event;
-            }
-            if (elemento.target) {
-                targ = elemento.target;
-            } else if (elemento.srcElement) {
-                targ = elemento.srcElement;
-            }
-            var tname;
-            tname = targ.tagName;
-            alert("Usted seleccionó un elemento de tipo " + tname + " Gracias.");
-        }
-
-        function Coordenadas(e) {
-            x = e.clientX;
-            y = e.clientY;
-            coor = "Coordenadas: (" + x + "," + y + ")";
-            document.getElementById("párrafofinal").innerHTML = coor
-        }
-
-        function clearCoor() {
-            document.getElementById("párrafofinal").innerHTML = "";
-        }
-    </script>
+    <script src="js/Eventos.js"></script>
 </head>
 
-<body onmousedown="queElemento(event)">   <!-- Puedo evitar que pase? -->
+<body >   <!-- Puedo evitar que pase? onmousedown="queElemento(event)"-->
 
     <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Pasar el mouse sobre este texto</h1>
 
-    <p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
+    <p onmousedown="myFunction2(this, '40px')" onmouseup="myFunction(this,'green')">
         Click en el texto para cambiar el color. Una función con parámetros, se activa cunado se presiona el boton del
         mouse y se desactiva
         cuando se suelta el botón del mouse nuevamente.
@@ -53,11 +24,12 @@
     <p>Haga click sobre un lugar o elemento del documento.
         Un cuadro de alerta le indicará con qué elemento está interactuando.</p>
     <h3>Esto es un encabezado</h3>
-    <img border="0" src="/Imagenes/scalapp.png" alt="Smiley" width="100" height="100" onmousemove="Coordenadas(event)">
-    <p>Esto es el tercer párrafo.</p>
+    <img border="0" src="/Imagenes/retolaberinto.jpg" alt="Smiley" width="600" height="400" onmousemove="Coordenadas(event)">
+    <h4>Esto es el tercer párrafo.</h4>
+    <p id="párrafofinal"></p>
+    
 
-
-    <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="Coordenadas(event)"
+    <div id="coordiv" style="width:199px;height:99px;border:5px solid" onmousemove="Coordenadas(event)"
         onmouseout="clearCoor()"></div>
 
     <p>Pase el mouse sobre el rectángulo de arriba y obtendrá las coordenadas del puntero del mouse.

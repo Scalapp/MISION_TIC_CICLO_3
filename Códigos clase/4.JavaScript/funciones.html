@@ -6,30 +6,33 @@
  */-->
 <!-- 2. Este es un ejemplo de JavaScript desde distintas fuentes -->
 <html>
+
 <head>
     <script>
         function myFunction3() {
             document.getElementById('ModParrafo').innerHTML = 'Este es el texto modificado desde 3!';
         }
-        </script>
-
-<script src="myScript.js"></script>  <!-- Otra forma -->
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen"/>
+    <script src="myScript.js"></script> <!-- Otra forma -->
+    <script src="javascript.js"></script> <!-- Otra forma -->
+    <script src="js/myScript.js"></script> <!-- Mejor práctica: "recomendada" -->
+    <script
+        src="https://github.com/DiegOliveros/MisionTIC2022-Ciclo2/tree/main/CodigosClase/src/EjerClassCiclo2"></script>
+    <!-- Full Url" -->
 </head>
+
 <body>
     <h2>¿Qué es Javascript?</h2>
 
-    
+    <p id="ModParrafo">
+        JavaScript puede cambiar el contenido, haciendo click en el siguiente botón:
+    </p>
 
-<p id="ModParrafo">
-    JavaScript puede cambiar el contenido, haciendo click en el siguiente botón:
-</p>
-<script src="javascript.js"></script>  <!-- Otra forma -->
-<script src="js/myScript.js"></script>  <!-- Mejor práctica: "recomendada" -->
-<script src="https://github.com/DiegOliveros/MisionTIC2022-Ciclo2/tree/main/CodigosClase/src/EjerClassCiclo2"></script>  <!-- Full Url" -->
-<button type="button" onclick="myFunction1()">1. Haga click aquí!</button>
-<button type="button" onclick="myFunction2()">2. Haga click aquí!</button>
-<button type="button" onclick="myFunction3()">3. Haga click aquí!</button>
-<button type="button" onclick="myFunction4()">4. Haga click aquí!</button>
+    <button class="button1" type="button" onclick="myFunction1()">1. Haga click aquí!</button>
+    <button class="button1" type="button" onclick="myFunction2()">2. Haga click aquí!</button>
+    <button class="button1" type="button" onclick="myFunction3()">3. Haga click aquí!</button>
+    <button class="button1" type="button" onclick="myFunction4()">4. Haga click aquí!</button>
 </body>
 
 </html>

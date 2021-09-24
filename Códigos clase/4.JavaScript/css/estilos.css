@@ -1,0 +1,7 @@
+.button1{
+    background-color: rgb(46, 66, 66);
+    color: azure;
+    padding: 15px 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
