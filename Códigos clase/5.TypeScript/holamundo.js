@@ -1,4 +1,3 @@
-"use strict";
 /**
  * 23 septiembre 2021
  * @author Diego Iván Oliveros Acosta

@@ -1,3 +1,4 @@
+   
 /**
  * 23 septiembre 2021
  * @author Diego Iván Oliveros Acosta
@@ -74,4 +75,3 @@ if (preferencias.color === colores.amarillo) {
 
 const number: any = "0.01 "; // no l o puedes hacer con string "0.01", no se recomienda num 
 const number2: number = 0.01;
-

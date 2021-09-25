@@ -4,7 +4,7 @@
  * www.scalapp.co
  */
 function suma(a, b) {
-    return "el resultado es:" + a + b;
+    return a + b;
 }
 console.log(suma(22, 85.2));
 /**

@@ -3,8 +3,8 @@
  * @author Diego Iván Oliveros Acosta
  * www.scalapp.co
  */
-function suma(a: number, b: number) {
-    return "el resultado es:"+a + b;
+function suma(a: number, b: number) :number{
+    return  a + b;
 }
 console.log(suma(22, 85.2));
 
