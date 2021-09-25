@@ -4,6 +4,20 @@
  * www.scalapp.co
  */
 function suma(a, b) {
-    return a + b;
+    return "el resultado es:" + a + b;
 }
 console.log(suma(22, 85.2));
+/**
+class Rombo {
+    diagonalVertical:number;
+    diagonalHorizontal:number;
+    calcularArea():number{
+      return this.diagonalHorizontal*this.diagonalVertical;
+  
+    };
+    constructor (diagonalVertical:number, diagonalHorizontal:number){
+      this.diagonalVertical=diagonalVertical;
+      this.diagonalHorizontal=diagonalHorizontal;
+  
+    }}
+**/

@@ -25,6 +25,7 @@ function Coordenadas(e) {
     x = e.clientX;
     y = e.clientY;
     coor = "Las coordenadas son: (" + x + "," + y + ")";
+
     document.getElementById("párrafofinal").innerHTML = coor
 }
 

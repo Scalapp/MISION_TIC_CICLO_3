@@ -1,9 +1,10 @@
+"use strict";
 /**
- * 21 septiembre 2021
+ * 23 septiembre 2021
  * @author Diego Iván Oliveros Acosta
  * www.scalapp.co
  */
- var areatotal = 8;
+var areatotal = 8;
 var uncolor = 0xff00;
 var binario = 51;
 var texto1 = "El área de la figura es: ";

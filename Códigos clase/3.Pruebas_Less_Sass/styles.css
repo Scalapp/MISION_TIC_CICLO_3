@@ -1,21 +1,45 @@
 body {
-  background-color: red;
-  font-family: sans-serif;
-  background-color: black;
-  color: blanchedalmond;
-  padding: 30px;
+  background-color: #140808;
 }
+
 h1 {
-  font-size: 20px;
   color: red;
-  font-family: sans-serif;
-  background-color: black;
-  color: blanchedalmond;
-  padding: 30px;
+  background-color: burlywood;
+  padding: 40px;
+  width: 100px;
+  font-size: 40px;
 }
-.fonT {
-  font-family: sans-serif;
-  background-color: black;
-  color: blanchedalmond;
-  padding: 30px;
+
+p {
+  color: blue;
+  background-color: burlywood;
+  padding: 16.66667px;
+  width: 100px;
+  font-size: 16.66667px;
 }
+
+ul {
+  list-style: none;
+  color: blanchedalmond;
+  padding: 20px;
+}
+
+ul li {
+  display: inline-block;
+  background-color: burlywood;
+  color: black;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  text-align: left;
+  text-indent: 2px;
+}
+
+ul li a {
+  background-color: blue;
+}
+
+ol {
+  list-style: none;
+  color: blanchedalmond;
+}
+/*# sourceMappingURL=styles.css.map */
