@@ -8,7 +8,7 @@ function suma(a: number, b: number) :number{
 }
 console.log(suma(22, 85.2));
 
-/**
+
 class Rombo {
     diagonalVertical:number;
     diagonalHorizontal:number;
@@ -21,5 +21,14 @@ class Rombo {
       this.diagonalHorizontal=diagonalHorizontal;
   
     }}
-**/
+
+  
+  var unRombo = new Rombo(4, 5);
+  var resultado = unRombo.calcularArea();
+  console.log("EL área del Rombo es:"+resultado);
+  console.log("este es el atributo 1, horizontal:"+unRombo.diagonalHorizontal)
+  console.log("este es el atributo 2, vertical:"+unRombo.diagonalVertical)
+
+
+
     

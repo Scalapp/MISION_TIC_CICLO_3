@@ -3,16 +3,16 @@
  * @author Diego Iván Oliveros Acosta
  * www.scalapp.co
  */
- let areatotal : number = 8;
+ let areatotal2 : number = 8;
  var texto1: string = "El área de la figura es: ";
  var estavivo: boolean = false; //no se puede usar 1. 
  
- function calcularArea1(lado: number): void {
-     console.log(lado * lado);
+ function calcularArea(lado: number): void {
+    console.log(lado * lado);
  }
  calcularArea1(5);
  
- function imprimirArea(lado: number, text: string): void {
+ function imprimirArea2(lado: number, text: string): void {
      console.log(text + lado * lado);
  }
  
