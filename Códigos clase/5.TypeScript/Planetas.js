@@ -1,3 +1,4 @@
+"use strict";
 var planeta2 = new Object();
 var planeta3 = {};
 var planeta = {

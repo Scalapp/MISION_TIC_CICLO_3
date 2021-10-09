@@ -1,0 +1,43 @@
+@urlprincipal =http://localhost:4000
+
+
+GET {{urlprincipal}}/producto/615bb51b1bf7bbc354500cd3
+
+
+###
+GET {{urlprincipal}}/productos
+
+### crear un producto 
+POST {{urlprincipal}}/productos
+Content-Type: application/json
+
+{
+    "nombre": "MANZANA",
+    "id":11,   
+    "descripcion": "manzana desde el POST en producto",
+    "precio" : 7.25,
+}
+
+### crear un producto 
+POST {{urlprincipal}}/producto
+Content-Type: application/json
+
+{   "_id" : ObjectId("615bb8a71bf7bbc354500ced"),
+    "id" : 4, 
+    "nombre" : "FRAMBUESA",
+    "descripcion" : "FRAMBUESA, RUBUS IDAEUS / ROSACEAE",
+    "poster_path" : "/4.jpg",
+    "precio" : 7.25 
+}
+
+### eliminar un producto
+DELETE {{urlprincipal}}/productos/615bb8a71bf7bbc354500ced
+
+### actualizar 
+PUT {{urlprincipal}}/productos/615bb51b1bf7bbc354500cd3
+Content-Type: application/json
+
+{
+    "nombre" : "manzana",
+    "precio" : 9.25 
+}
