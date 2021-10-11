@@ -3,7 +3,7 @@ import { Schema, model } from "mongoose";
 const productoSchema =new Schema({
     nombre: {
         type:String,
-        required:true,
+        required:false,
         trim:true
     },
     id: {
@@ -13,12 +13,12 @@ const productoSchema =new Schema({
     },
     descripcion: {
         type:String,
-        required:true,
+        required:false,
         trim:true
     },
     precio:{
         type:Number,
-        required:true,
+        required:false,
         trim:true
     },
 },{

@@ -1,8 +1,11 @@
 @urlprincipal =http://localhost:4000
+@otavariable= https://example.com/comments
 
 
-GET {{urlprincipal}}/producto/615bb51b1bf7bbc354500cd3
+GET {{urlprincipal}}/producto/615bb8a71bf7bbc354500ceb
+###
 
+GET {{urlprincipal}}/producto/615bb8a71bf7bbc354500cec
 
 ###
 GET {{urlprincipal}}/productos
@@ -22,8 +25,7 @@ Content-Type: application/json
 POST {{urlprincipal}}/producto
 Content-Type: application/json
 
-{   "_id" : ObjectId("615bb8a71bf7bbc354500ced"),
-    "id" : 4, 
+{   "id" : 4, 
     "nombre" : "FRAMBUESA",
     "descripcion" : "FRAMBUESA, RUBUS IDAEUS / ROSACEAE",
     "poster_path" : "/4.jpg",
@@ -31,13 +33,12 @@ Content-Type: application/json
 }
 
 ### eliminar un producto
-DELETE {{urlprincipal}}/productos/615bb8a71bf7bbc354500ced
+DELETE {{urlprincipal}}/productos/615cf377cdaf0aa17bf40ac2
 
 ### actualizar 
-PUT {{urlprincipal}}/productos/615bb51b1bf7bbc354500cd3
+PUT {{urlprincipal}}/productos/615bc0c8689ceb0baa12339e
 Content-Type: application/json
 
 {
-    "nombre" : "manzana",
-    "precio" : 9.25 
+    "nombre" : "manzana"
 }
