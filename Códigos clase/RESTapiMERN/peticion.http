@@ -1,0 +1,33 @@
+@url=http://localhost:4000
+
+###
+POST {{url}} HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+###
+POST {{url}}/Ingreso HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Ana Gomez",
+    "email": "Ana@scalapp.co",
+    "password": "18147c3c6a1ff0bd72b7a4c39a99d2ba"
+}
+
+###
+POST {{url}} HTTP/1.1
+
+###
+POST {{url}}/login HTTP/1.1
+
+###
+POST {{url}}/usuarios HTTP/1.1
+
+###
+POST {{url}}/productos HTTP/1.1
+

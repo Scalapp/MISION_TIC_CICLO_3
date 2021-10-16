@@ -14,6 +14,6 @@ router.delete("/productos/:id",productoCtrl.deleteProducto);
 
 router.put("/productos/:id",productoCtrl.updateProducto);
 
-
+router.get("/hola",(req, res) =>{res.send("Hola desde hola")})
 
 export default router   //se exporta para usar en app

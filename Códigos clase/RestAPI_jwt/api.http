@@ -1,0 +1,88 @@
+@url =http://localhost:3000
+
+###
+POST  http://localhost:5000/login
+
+###
+POST   {{url}}/singup
+
+
+###
+POST   {{url}}/profile
+###
+POST   {{url}}/login 
+Content-Type: application/json
+
+{
+    "nombre": "MANZANA",
+    "id": 11,   
+    "descripcion": "manzana desde el POST en producto",
+    "precio" : 7.25
+}
+###
+
+POST {{url}}/login HTTP/1.1
+content-type: application/json
+
+{
+    "name": "f oliveros",
+    "email": "ceod@scalapp.co"
+}
+
+
+###
+
+POST {{url}}/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "iscego Oliveros",
+    "email": "ecso@scalapp.co",
+    "password":"18147c3c6a1ff0bd72b7a4c39a99d2ba"
+}
+###
+
+POST {{url}}/NewUser HTTP/1.1
+content-type: application/json
+
+{
+    "username": "iscego Oliveros",
+    "email": "ecso@scalapp.co",
+    "password":"18147c3c6a1ff0bd72b7a4c39a99d2ba"
+}
+
+### "Usuario y/o contraseña invalidos"
+POST {{url}}/login HTTP/1.1
+content-type: application/json
+
+{
+    "name": "diego oliveros",
+    "email": "ceo@scalapp.co"
+}
+### esta es una respuesta de la página de inicio
+POST {{url}}/login HTTP/1.1
+content-type: application/json
+
+{
+    "name": "diego oliveros",
+    "email": "ceo@scalapp.co"
+}
+
+### una petición para validar autoken
+GET {{url}}/productos HTTP/1.1
+content-type: application/json
+token_de_auto: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTY4NTQzZDgxZjlmM2VkMTY2OGI5ODMiLCJpYXQiOjE2MzQyMjkyOTIsImV4cCI6MTYzNDMxNTY5Mn0.7sOSUo16CLkzFRzqCnyJlA2pxdDbq2yKTraMS6pREY0
+
+{
+    "name": "dgo oliveros",
+    "email": "ceo@scalapp.co"
+}
+
+### la misma sin token 
+GET {{url}}/productos HTTP/1.1
+content-type: application/json
+
+{
+    "name": "dgo oliveros",
+    "email": "ceo@scalapp.co"
+}
