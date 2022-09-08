@@ -1,7 +1,15 @@
-.button1{
-    background-color: rgb(46, 66, 66);
-    color: azure;
-    padding: 15px 32px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    cursor: pointer;
+table{
+  font-family:arial,sans-serif;
+  color:#54784C;
+  }
+  td{
+    border:1px solid #2C372A;
+    text-align:left;
+  }
+th{
+  border:1px solid #2C372A;
+  text-align:center;
+}
+.miparrafo{
+	color:blue;
 }
